@@ -1,1 +1,4 @@
 
+import AppService
+
+AppService.run()

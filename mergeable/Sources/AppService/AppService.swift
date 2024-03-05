@@ -11,10 +11,10 @@ public enum AppService {
 
     let store = Store<State, Never>(initialState: .init())
 
-    store.sinkState { state in
-      print("State updated: \(state)")
-    }
-    .storeWhileSourceActive()
+//    store.sinkState { state in
+//      print("State updated: \(state)")
+//    }
+//    .storeWhileSourceActive()
 
     print("Hello, I'm AppService, \(store)")
 

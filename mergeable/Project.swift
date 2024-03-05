@@ -14,7 +14,8 @@ let project = Project(
       dependencies: [
         .external(name: "Verge"),
         .target(name: "AppService"),
-      ]
+      ], 
+      settings: .settings(base: ["OTHER_LDFLAGS" : ["-ObjC"]])
     ),
 
     .target(

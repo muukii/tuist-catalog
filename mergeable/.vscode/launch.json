@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:AmplifyDemo}/Plugins/AmplifyDemo",
+      "name": "Debug tuist-my-cli (Plugins/AmplifyDemo)",
+      "program": "${workspaceFolder:AmplifyDemo}/Plugins/AmplifyDemo/.build/debug/tuist-my-cli",
+      "preLaunchTask": "swift: Build Debug tuist-my-cli (Plugins/AmplifyDemo)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:AmplifyDemo}/Plugins/AmplifyDemo",
+      "name": "Release tuist-my-cli (Plugins/AmplifyDemo)",
+      "program": "${workspaceFolder:AmplifyDemo}/Plugins/AmplifyDemo/.build/release/tuist-my-cli",
+      "preLaunchTask": "swift: Build Release tuist-my-cli (Plugins/AmplifyDemo)"
+    }
+  ]
+}

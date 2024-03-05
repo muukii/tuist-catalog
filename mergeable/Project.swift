@@ -10,12 +10,13 @@ let project = Project(
       destinations: .iOS,
       product: .app,
       bundleId: "app",
+      deploymentTargets: .iOS("15.0"),
       sources: ["./Sources/App/**"],
       dependencies: [
         .external(name: "Verge"),
         .target(name: "AppService"),
-      ], 
-      settings: .settings(base: ["OTHER_LDFLAGS" : ["-ObjC"]])
+      ],
+      mergedBinaryType: .manual(mergeableDependencies: ["AppService"])
     ),
 
     .target(
@@ -23,10 +24,12 @@ let project = Project(
       destinations: .iOS,
       product: .framework,
       bundleId: "appService",
+      deploymentTargets: .iOS("15.0"),
       sources: ["./Sources/AppService/**"],
       dependencies: [
         .external(name: "Verge")
-      ]
+      ],
+      mergeable: true
     )
   ]
 )

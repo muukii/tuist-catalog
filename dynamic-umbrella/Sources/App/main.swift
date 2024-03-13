@@ -1,0 +1,4 @@
+
+import DynamicA
+
+AppService.run()
